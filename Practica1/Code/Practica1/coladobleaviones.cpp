@@ -71,6 +71,33 @@ Avion *ColaDobleAviones::VerCola()
     return Actual;
 }
 
+string ColaDobleAviones::VerGraphviz()
+{
+    if (this->Principal == nullptr) return "";
+    string SubGraph = "subgraph cluster_GFAviones{\nlabel = \"Aviones\"\n;";
+    string SEnlaces = "";
+    string SEtiquetas = "";
+    Avion * actual = this->Principal;
+    while (actual != nullptr) {
+        SEtiquetas+= "A_" + actual->Nombre + "[label=\""
+                + actual->Nombre + "\\n"
+                + "Tipo: "+actual->Tipo + "\\n"
+                + "Pasajeros:" + to_string(actual->Pasajeros)+ "\\n"
+                + "Desabordaje:" + to_string(actual->Desabordaje) + "\\n"
+                + "Mantenimiento:" + to_string(actual->Mantenimiento)
+                + "\"];\n";
+        if (actual->Siguiente != nullptr){
+            SEnlaces += "A_" + actual->Nombre + "->" + "A_" +actual->Siguiente->Nombre + ";\n";
+            SEnlaces += "A_" + actual->Siguiente->Nombre + "->" + "A_" +actual->Nombre + ";\n";
+        }
+        actual = actual->Siguiente;
+    }
+    SubGraph+= SEtiquetas;
+    SubGraph+= SEnlaces;
+    SubGraph+= "}";
+    return SubGraph;
+}
+
 Avion::Avion(string tipo_, int pasajeros_, int desabordaje_, int mantenimiento_,string nombre_)
 {
     this->Tipo = tipo_;

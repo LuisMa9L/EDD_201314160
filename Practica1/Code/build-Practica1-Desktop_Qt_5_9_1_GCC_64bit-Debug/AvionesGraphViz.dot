@@ -1,0 +1,378 @@
+digraph grafica {
+ node[shape=record, fontcolor=red,color = blue]; 
+label="     lMMl     "
+subgraph cluster_GFAviones{
+label = "Aviones"
+;A_Avion_14[label="Avion_14\nTipo: Grande\nPasajeros:30\nDesabordaje:3\nMantenimiento:3"];
+A_Avion_13[label="Avion_13\nTipo: Mediano\nPasajeros:19\nDesabordaje:2\nMantenimiento:4"];
+A_Avion_12[label="Avion_12\nTipo: Grande\nPasajeros:34\nDesabordaje:3\nMantenimiento:5"];
+A_Avion_11[label="Avion_11\nTipo: Grande\nPasajeros:37\nDesabordaje:3\nMantenimiento:3"];
+A_Avion_10[label="Avion_10\nTipo: Mediano\nPasajeros:25\nDesabordaje:2\nMantenimiento:3"];
+A_Avion_9[label="Avion_9\nTipo: Mediano\nPasajeros:16\nDesabordaje:2\nMantenimiento:4"];
+A_Avion_14->A_Avion_13;
+A_Avion_13->A_Avion_14;
+A_Avion_13->A_Avion_12;
+A_Avion_12->A_Avion_13;
+A_Avion_12->A_Avion_11;
+A_Avion_11->A_Avion_12;
+A_Avion_11->A_Avion_10;
+A_Avion_10->A_Avion_11;
+A_Avion_10->A_Avion_9;
+A_Avion_9->A_Avion_10;
+}subgraph cluster_GFPasajeros{
+label = "Pasajeros"
+;Pasaj_P15[label="Pasajero: P15\nMaletas: 2\nDocumentos:3\nTurnos: 2"];
+Pasaj_P16[label="Pasajero: P16\nMaletas: 2\nDocumentos:10\nTurnos: 1"];
+Pasaj_P17[label="Pasajero: P17\nMaletas: 3\nDocumentos:4\nTurnos: 3"];
+Pasaj_P18[label="Pasajero: P18\nMaletas: 4\nDocumentos:7\nTurnos: 1"];
+Pasaj_P19[label="Pasajero: P19\nMaletas: 1\nDocumentos:1\nTurnos: 1"];
+Pasaj_P20[label="Pasajero: P20\nMaletas: 4\nDocumentos:4\nTurnos: 1"];
+Pasaj_P21[label="Pasajero: P21\nMaletas: 2\nDocumentos:4\nTurnos: 2"];
+Pasaj_P22[label="Pasajero: P22\nMaletas: 3\nDocumentos:3\nTurnos: 2"];
+Pasaj_P23[label="Pasajero: P23\nMaletas: 3\nDocumentos:10\nTurnos: 2"];
+Pasaj_P24[label="Pasajero: P24\nMaletas: 4\nDocumentos:1\nTurnos: 1"];
+Pasaj_P25[label="Pasajero: P25\nMaletas: 1\nDocumentos:8\nTurnos: 1"];
+Pasaj_P26[label="Pasajero: P26\nMaletas: 2\nDocumentos:4\nTurnos: 3"];
+Pasaj_P27[label="Pasajero: P27\nMaletas: 4\nDocumentos:4\nTurnos: 1"];
+Pasaj_P28[label="Pasajero: P28\nMaletas: 2\nDocumentos:9\nTurnos: 2"];
+Pasaj_P29[label="Pasajero: P29\nMaletas: 2\nDocumentos:9\nTurnos: 1"];
+Pasaj_P30[label="Pasajero: P30\nMaletas: 1\nDocumentos:1\nTurnos: 2"];
+Pasaj_P31[label="Pasajero: P31\nMaletas: 1\nDocumentos:10\nTurnos: 1"];
+Pasaj_P32[label="Pasajero: P32\nMaletas: 3\nDocumentos:9\nTurnos: 3"];
+Pasaj_P33[label="Pasajero: P33\nMaletas: 3\nDocumentos:9\nTurnos: 1"];
+Pasaj_P34[label="Pasajero: P34\nMaletas: 3\nDocumentos:9\nTurnos: 1"];
+Pasaj_P35[label="Pasajero: P35\nMaletas: 1\nDocumentos:4\nTurnos: 1"];
+Pasaj_P36[label="Pasajero: P36\nMaletas: 4\nDocumentos:9\nTurnos: 2"];
+Pasaj_P37[label="Pasajero: P37\nMaletas: 1\nDocumentos:8\nTurnos: 1"];
+Pasaj_P38[label="Pasajero: P38\nMaletas: 2\nDocumentos:6\nTurnos: 1"];
+Pasaj_P39[label="Pasajero: P39\nMaletas: 4\nDocumentos:1\nTurnos: 1"];
+Pasaj_P40[label="Pasajero: P40\nMaletas: 4\nDocumentos:10\nTurnos: 2"];
+Pasaj_P41[label="Pasajero: P41\nMaletas: 2\nDocumentos:10\nTurnos: 3"];
+Pasaj_P42[label="Pasajero: P42\nMaletas: 4\nDocumentos:1\nTurnos: 3"];
+Pasaj_P43[label="Pasajero: P43\nMaletas: 3\nDocumentos:9\nTurnos: 2"];
+Pasaj_P44[label="Pasajero: P44\nMaletas: 2\nDocumentos:4\nTurnos: 2"];
+Pasaj_P45[label="Pasajero: P45\nMaletas: 3\nDocumentos:8\nTurnos: 1"];
+Pasaj_P46[label="Pasajero: P46\nMaletas: 4\nDocumentos:10\nTurnos: 2"];
+Pasaj_P47[label="Pasajero: P47\nMaletas: 2\nDocumentos:6\nTurnos: 3"];
+Pasaj_P48[label="Pasajero: P48\nMaletas: 3\nDocumentos:1\nTurnos: 1"];
+Pasaj_P49[label="Pasajero: P49\nMaletas: 3\nDocumentos:9\nTurnos: 1"];
+Pasaj_P50[label="Pasajero: P50\nMaletas: 1\nDocumentos:2\nTurnos: 1"];
+Pasaj_P51[label="Pasajero: P51\nMaletas: 3\nDocumentos:9\nTurnos: 1"];
+Pasaj_P52[label="Pasajero: P52\nMaletas: 4\nDocumentos:5\nTurnos: 1"];
+Pasaj_P53[label="Pasajero: P53\nMaletas: 1\nDocumentos:4\nTurnos: 3"];
+Pasaj_P54[label="Pasajero: P54\nMaletas: 4\nDocumentos:5\nTurnos: 3"];
+Pasaj_P55[label="Pasajero: P55\nMaletas: 4\nDocumentos:9\nTurnos: 2"];
+Pasaj_P56[label="Pasajero: P56\nMaletas: 1\nDocumentos:1\nTurnos: 3"];
+Pasaj_P57[label="Pasajero: P57\nMaletas: 2\nDocumentos:2\nTurnos: 2"];
+Pasaj_P58[label="Pasajero: P58\nMaletas: 1\nDocumentos:3\nTurnos: 3"];
+Pasaj_P59[label="Pasajero: P59\nMaletas: 2\nDocumentos:5\nTurnos: 3"];
+Pasaj_P60[label="Pasajero: P60\nMaletas: 3\nDocumentos:10\nTurnos: 1"];
+Pasaj_P61[label="Pasajero: P61\nMaletas: 4\nDocumentos:2\nTurnos: 2"];
+Pasaj_P62[label="Pasajero: P62\nMaletas: 2\nDocumentos:9\nTurnos: 2"];
+Pasaj_P63[label="Pasajero: P63\nMaletas: 3\nDocumentos:4\nTurnos: 1"];
+Pasaj_P64[label="Pasajero: P64\nMaletas: 3\nDocumentos:9\nTurnos: 3"];
+Pasaj_P65[label="Pasajero: P65\nMaletas: 4\nDocumentos:10\nTurnos: 3"];
+Pasaj_P66[label="Pasajero: P66\nMaletas: 4\nDocumentos:4\nTurnos: 1"];
+Pasaj_P67[label="Pasajero: P67\nMaletas: 2\nDocumentos:7\nTurnos: 3"];
+Pasaj_P68[label="Pasajero: P68\nMaletas: 4\nDocumentos:10\nTurnos: 2"];
+Pasaj_P69[label="Pasajero: P69\nMaletas: 4\nDocumentos:4\nTurnos: 3"];
+Pasaj_P70[label="Pasajero: P70\nMaletas: 3\nDocumentos:2\nTurnos: 1"];
+Pasaj_P71[label="Pasajero: P71\nMaletas: 3\nDocumentos:5\nTurnos: 2"];
+Pasaj_P72[label="Pasajero: P72\nMaletas: 1\nDocumentos:2\nTurnos: 3"];
+Pasaj_P73[label="Pasajero: P73\nMaletas: 3\nDocumentos:10\nTurnos: 2"];
+Pasaj_P74[label="Pasajero: P74\nMaletas: 1\nDocumentos:8\nTurnos: 2"];
+Pasaj_P75[label="Pasajero: P75\nMaletas: 4\nDocumentos:8\nTurnos: 3"];
+Pasaj_P76[label="Pasajero: P76\nMaletas: 3\nDocumentos:1\nTurnos: 3"];
+Pasaj_P77[label="Pasajero: P77\nMaletas: 4\nDocumentos:9\nTurnos: 3"];
+Pasaj_P78[label="Pasajero: P78\nMaletas: 4\nDocumentos:5\nTurnos: 2"];
+Pasaj_P79[label="Pasajero: P79\nMaletas: 2\nDocumentos:5\nTurnos: 2"];
+Pasaj_P80[label="Pasajero: P80\nMaletas: 1\nDocumentos:6\nTurnos: 1"];
+Pasaj_P81[label="Pasajero: P81\nMaletas: 3\nDocumentos:9\nTurnos: 2"];
+Pasaj_P82[label="Pasajero: P82\nMaletas: 2\nDocumentos:1\nTurnos: 1"];
+Pasaj_P83[label="Pasajero: P83\nMaletas: 1\nDocumentos:5\nTurnos: 2"];
+Pasaj_P84[label="Pasajero: P84\nMaletas: 4\nDocumentos:1\nTurnos: 1"];
+Pasaj_P85[label="Pasajero: P85\nMaletas: 4\nDocumentos:4\nTurnos: 1"];
+Pasaj_P86[label="Pasajero: P86\nMaletas: 3\nDocumentos:7\nTurnos: 1"];
+Pasaj_P87[label="Pasajero: P87\nMaletas: 2\nDocumentos:5\nTurnos: 1"];
+Pasaj_P88[label="Pasajero: P88\nMaletas: 4\nDocumentos:6\nTurnos: 2"];
+Pasaj_P89[label="Pasajero: P89\nMaletas: 3\nDocumentos:1\nTurnos: 1"];
+Pasaj_P90[label="Pasajero: P90\nMaletas: 3\nDocumentos:10\nTurnos: 1"];
+Pasaj_P91[label="Pasajero: P91\nMaletas: 1\nDocumentos:8\nTurnos: 3"];
+Pasaj_P92[label="Pasajero: P92\nMaletas: 3\nDocumentos:7\nTurnos: 3"];
+Pasaj_P93[label="Pasajero: P93\nMaletas: 4\nDocumentos:4\nTurnos: 3"];
+Pasaj_P94[label="Pasajero: P94\nMaletas: 4\nDocumentos:3\nTurnos: 3"];
+Pasaj_P95[label="Pasajero: P95\nMaletas: 3\nDocumentos:10\nTurnos: 3"];
+Pasaj_P96[label="Pasajero: P96\nMaletas: 4\nDocumentos:2\nTurnos: 1"];
+Pasaj_P97[label="Pasajero: P97\nMaletas: 4\nDocumentos:6\nTurnos: 2"];
+Pasaj_P98[label="Pasajero: P98\nMaletas: 2\nDocumentos:5\nTurnos: 1"];
+Pasaj_P99[label="Pasajero: P99\nMaletas: 2\nDocumentos:9\nTurnos: 2"];
+Pasaj_P100[label="Pasajero: P100\nMaletas: 2\nDocumentos:4\nTurnos: 3"];
+Pasaj_P101[label="Pasajero: P101\nMaletas: 4\nDocumentos:10\nTurnos: 2"];
+Pasaj_P102[label="Pasajero: P102\nMaletas: 1\nDocumentos:3\nTurnos: 1"];
+Pasaj_P103[label="Pasajero: P103\nMaletas: 2\nDocumentos:2\nTurnos: 2"];
+Pasaj_P104[label="Pasajero: P104\nMaletas: 2\nDocumentos:3\nTurnos: 2"];
+Pasaj_P105[label="Pasajero: P105\nMaletas: 3\nDocumentos:2\nTurnos: 1"];
+Pasaj_P106[label="Pasajero: P106\nMaletas: 2\nDocumentos:1\nTurnos: 1"];
+Pasaj_P107[label="Pasajero: P107\nMaletas: 1\nDocumentos:1\nTurnos: 2"];
+Pasaj_P108[label="Pasajero: P108\nMaletas: 4\nDocumentos:6\nTurnos: 1"];
+Pasaj_P109[label="Pasajero: P109\nMaletas: 2\nDocumentos:2\nTurnos: 3"];
+Pasaj_P110[label="Pasajero: P110\nMaletas: 3\nDocumentos:1\nTurnos: 2"];
+Pasaj_P111[label="Pasajero: P111\nMaletas: 2\nDocumentos:7\nTurnos: 1"];
+Pasaj_P112[label="Pasajero: P112\nMaletas: 2\nDocumentos:6\nTurnos: 2"];
+Pasaj_P113[label="Pasajero: P113\nMaletas: 2\nDocumentos:1\nTurnos: 3"];
+Pasaj_P114[label="Pasajero: P114\nMaletas: 2\nDocumentos:2\nTurnos: 3"];
+Pasaj_P115[label="Pasajero: P115\nMaletas: 3\nDocumentos:4\nTurnos: 2"];
+Pasaj_P116[label="Pasajero: P116\nMaletas: 2\nDocumentos:8\nTurnos: 1"];
+Pasaj_P117[label="Pasajero: P117\nMaletas: 2\nDocumentos:10\nTurnos: 3"];
+Pasaj_P118[label="Pasajero: P118\nMaletas: 3\nDocumentos:3\nTurnos: 1"];
+Pasaj_P119[label="Pasajero: P119\nMaletas: 1\nDocumentos:1\nTurnos: 3"];
+Pasaj_P120[label="Pasajero: P120\nMaletas: 2\nDocumentos:9\nTurnos: 2"];
+Pasaj_P121[label="Pasajero: P121\nMaletas: 1\nDocumentos:1\nTurnos: 1"];
+Pasaj_P122[label="Pasajero: P122\nMaletas: 1\nDocumentos:6\nTurnos: 1"];
+Pasaj_P123[label="Pasajero: P123\nMaletas: 1\nDocumentos:7\nTurnos: 3"];
+Pasaj_P124[label="Pasajero: P124\nMaletas: 4\nDocumentos:1\nTurnos: 1"];
+Pasaj_P125[label="Pasajero: P125\nMaletas: 3\nDocumentos:3\nTurnos: 3"];
+Pasaj_P126[label="Pasajero: P126\nMaletas: 3\nDocumentos:10\nTurnos: 3"];
+Pasaj_P127[label="Pasajero: P127\nMaletas: 2\nDocumentos:1\nTurnos: 2"];
+Pasaj_P128[label="Pasajero: P128\nMaletas: 2\nDocumentos:1\nTurnos: 1"];
+Pasaj_P129[label="Pasajero: P129\nMaletas: 4\nDocumentos:3\nTurnos: 1"];
+Pasaj_P130[label="Pasajero: P130\nMaletas: 4\nDocumentos:8\nTurnos: 1"];
+Pasaj_P131[label="Pasajero: P131\nMaletas: 4\nDocumentos:5\nTurnos: 3"];
+Pasaj_P132[label="Pasajero: P132\nMaletas: 2\nDocumentos:5\nTurnos: 3"];
+Pasaj_P133[label="Pasajero: P133\nMaletas: 4\nDocumentos:6\nTurnos: 2"];
+Pasaj_P134[label="Pasajero: P134\nMaletas: 2\nDocumentos:1\nTurnos: 2"];
+Pasaj_P135[label="Pasajero: P135\nMaletas: 4\nDocumentos:2\nTurnos: 1"];
+Pasaj_P136[label="Pasajero: P136\nMaletas: 1\nDocumentos:4\nTurnos: 3"];
+Pasaj_P137[label="Pasajero: P137\nMaletas: 3\nDocumentos:4\nTurnos: 2"];
+Pasaj_P138[label="Pasajero: P138\nMaletas: 2\nDocumentos:9\nTurnos: 2"];
+Pasaj_P139[label="Pasajero: P139\nMaletas: 1\nDocumentos:6\nTurnos: 2"];
+Pasaj_P140[label="Pasajero: P140\nMaletas: 4\nDocumentos:10\nTurnos: 2"];
+Pasaj_P141[label="Pasajero: P141\nMaletas: 2\nDocumentos:7\nTurnos: 3"];
+Pasaj_P142[label="Pasajero: P142\nMaletas: 1\nDocumentos:4\nTurnos: 1"];
+Pasaj_P143[label="Pasajero: P143\nMaletas: 2\nDocumentos:10\nTurnos: 1"];
+Pasaj_P144[label="Pasajero: P144\nMaletas: 2\nDocumentos:9\nTurnos: 3"];
+Pasaj_P145[label="Pasajero: P145\nMaletas: 2\nDocumentos:9\nTurnos: 2"];
+Pasaj_P146[label="Pasajero: P146\nMaletas: 1\nDocumentos:1\nTurnos: 3"];
+Pasaj_P147[label="Pasajero: P147\nMaletas: 2\nDocumentos:3\nTurnos: 1"];
+Pasaj_P148[label="Pasajero: P148\nMaletas: 4\nDocumentos:7\nTurnos: 3"];
+Pasaj_P149[label="Pasajero: P149\nMaletas: 1\nDocumentos:5\nTurnos: 1"];
+Pasaj_P150[label="Pasajero: P150\nMaletas: 3\nDocumentos:7\nTurnos: 1"];
+Pasaj_P151[label="Pasajero: P151\nMaletas: 2\nDocumentos:10\nTurnos: 1"];
+Pasaj_P152[label="Pasajero: P152\nMaletas: 3\nDocumentos:8\nTurnos: 1"];
+Pasaj_P153[label="Pasajero: P153\nMaletas: 2\nDocumentos:9\nTurnos: 3"];
+Pasaj_P154[label="Pasajero: P154\nMaletas: 1\nDocumentos:8\nTurnos: 1"];
+Pasaj_P155[label="Pasajero: P155\nMaletas: 4\nDocumentos:3\nTurnos: 3"];
+Pasaj_P156[label="Pasajero: P156\nMaletas: 4\nDocumentos:4\nTurnos: 3"];
+Pasaj_P157[label="Pasajero: P157\nMaletas: 3\nDocumentos:3\nTurnos: 2"];
+Pasaj_P158[label="Pasajero: P158\nMaletas: 2\nDocumentos:10\nTurnos: 3"];
+Pasaj_P159[label="Pasajero: P159\nMaletas: 4\nDocumentos:8\nTurnos: 3"];
+Pasaj_P160[label="Pasajero: P160\nMaletas: 4\nDocumentos:4\nTurnos: 1"];
+Pasaj_P15 -> Pasaj_P16;
+Pasaj_P16 -> Pasaj_P17;
+Pasaj_P17 -> Pasaj_P18;
+Pasaj_P18 -> Pasaj_P19;
+Pasaj_P19 -> Pasaj_P20;
+Pasaj_P20 -> Pasaj_P21;
+Pasaj_P21 -> Pasaj_P22;
+Pasaj_P22 -> Pasaj_P23;
+Pasaj_P23 -> Pasaj_P24;
+Pasaj_P24 -> Pasaj_P25;
+Pasaj_P25 -> Pasaj_P26;
+Pasaj_P26 -> Pasaj_P27;
+Pasaj_P27 -> Pasaj_P28;
+Pasaj_P28 -> Pasaj_P29;
+Pasaj_P29 -> Pasaj_P30;
+Pasaj_P30 -> Pasaj_P31;
+Pasaj_P31 -> Pasaj_P32;
+Pasaj_P32 -> Pasaj_P33;
+Pasaj_P33 -> Pasaj_P34;
+Pasaj_P34 -> Pasaj_P35;
+Pasaj_P35 -> Pasaj_P36;
+Pasaj_P36 -> Pasaj_P37;
+Pasaj_P37 -> Pasaj_P38;
+Pasaj_P38 -> Pasaj_P39;
+Pasaj_P39 -> Pasaj_P40;
+Pasaj_P40 -> Pasaj_P41;
+Pasaj_P41 -> Pasaj_P42;
+Pasaj_P42 -> Pasaj_P43;
+Pasaj_P43 -> Pasaj_P44;
+Pasaj_P44 -> Pasaj_P45;
+Pasaj_P45 -> Pasaj_P46;
+Pasaj_P46 -> Pasaj_P47;
+Pasaj_P47 -> Pasaj_P48;
+Pasaj_P48 -> Pasaj_P49;
+Pasaj_P49 -> Pasaj_P50;
+Pasaj_P50 -> Pasaj_P51;
+Pasaj_P51 -> Pasaj_P52;
+Pasaj_P52 -> Pasaj_P53;
+Pasaj_P53 -> Pasaj_P54;
+Pasaj_P54 -> Pasaj_P55;
+Pasaj_P55 -> Pasaj_P56;
+Pasaj_P56 -> Pasaj_P57;
+Pasaj_P57 -> Pasaj_P58;
+Pasaj_P58 -> Pasaj_P59;
+Pasaj_P59 -> Pasaj_P60;
+Pasaj_P60 -> Pasaj_P61;
+Pasaj_P61 -> Pasaj_P62;
+Pasaj_P62 -> Pasaj_P63;
+Pasaj_P63 -> Pasaj_P64;
+Pasaj_P64 -> Pasaj_P65;
+Pasaj_P65 -> Pasaj_P66;
+Pasaj_P66 -> Pasaj_P67;
+Pasaj_P67 -> Pasaj_P68;
+Pasaj_P68 -> Pasaj_P69;
+Pasaj_P69 -> Pasaj_P70;
+Pasaj_P70 -> Pasaj_P71;
+Pasaj_P71 -> Pasaj_P72;
+Pasaj_P72 -> Pasaj_P73;
+Pasaj_P73 -> Pasaj_P74;
+Pasaj_P74 -> Pasaj_P75;
+Pasaj_P75 -> Pasaj_P76;
+Pasaj_P76 -> Pasaj_P77;
+Pasaj_P77 -> Pasaj_P78;
+Pasaj_P78 -> Pasaj_P79;
+Pasaj_P79 -> Pasaj_P80;
+Pasaj_P80 -> Pasaj_P81;
+Pasaj_P81 -> Pasaj_P82;
+Pasaj_P82 -> Pasaj_P83;
+Pasaj_P83 -> Pasaj_P84;
+Pasaj_P84 -> Pasaj_P85;
+Pasaj_P85 -> Pasaj_P86;
+Pasaj_P86 -> Pasaj_P87;
+Pasaj_P87 -> Pasaj_P88;
+Pasaj_P88 -> Pasaj_P89;
+Pasaj_P89 -> Pasaj_P90;
+Pasaj_P90 -> Pasaj_P91;
+Pasaj_P91 -> Pasaj_P92;
+Pasaj_P92 -> Pasaj_P93;
+Pasaj_P93 -> Pasaj_P94;
+Pasaj_P94 -> Pasaj_P95;
+Pasaj_P95 -> Pasaj_P96;
+Pasaj_P96 -> Pasaj_P97;
+Pasaj_P97 -> Pasaj_P98;
+Pasaj_P98 -> Pasaj_P99;
+Pasaj_P99 -> Pasaj_P100;
+Pasaj_P100 -> Pasaj_P101;
+Pasaj_P101 -> Pasaj_P102;
+Pasaj_P102 -> Pasaj_P103;
+Pasaj_P103 -> Pasaj_P104;
+Pasaj_P104 -> Pasaj_P105;
+Pasaj_P105 -> Pasaj_P106;
+Pasaj_P106 -> Pasaj_P107;
+Pasaj_P107 -> Pasaj_P108;
+Pasaj_P108 -> Pasaj_P109;
+Pasaj_P109 -> Pasaj_P110;
+Pasaj_P110 -> Pasaj_P111;
+Pasaj_P111 -> Pasaj_P112;
+Pasaj_P112 -> Pasaj_P113;
+Pasaj_P113 -> Pasaj_P114;
+Pasaj_P114 -> Pasaj_P115;
+Pasaj_P115 -> Pasaj_P116;
+Pasaj_P116 -> Pasaj_P117;
+Pasaj_P117 -> Pasaj_P118;
+Pasaj_P118 -> Pasaj_P119;
+Pasaj_P119 -> Pasaj_P120;
+Pasaj_P120 -> Pasaj_P121;
+Pasaj_P121 -> Pasaj_P122;
+Pasaj_P122 -> Pasaj_P123;
+Pasaj_P123 -> Pasaj_P124;
+Pasaj_P124 -> Pasaj_P125;
+Pasaj_P125 -> Pasaj_P126;
+Pasaj_P126 -> Pasaj_P127;
+Pasaj_P127 -> Pasaj_P128;
+Pasaj_P128 -> Pasaj_P129;
+Pasaj_P129 -> Pasaj_P130;
+Pasaj_P130 -> Pasaj_P131;
+Pasaj_P131 -> Pasaj_P132;
+Pasaj_P132 -> Pasaj_P133;
+Pasaj_P133 -> Pasaj_P134;
+Pasaj_P134 -> Pasaj_P135;
+Pasaj_P135 -> Pasaj_P136;
+Pasaj_P136 -> Pasaj_P137;
+Pasaj_P137 -> Pasaj_P138;
+Pasaj_P138 -> Pasaj_P139;
+Pasaj_P139 -> Pasaj_P140;
+Pasaj_P140 -> Pasaj_P141;
+Pasaj_P141 -> Pasaj_P142;
+Pasaj_P142 -> Pasaj_P143;
+Pasaj_P143 -> Pasaj_P144;
+Pasaj_P144 -> Pasaj_P145;
+Pasaj_P145 -> Pasaj_P146;
+Pasaj_P146 -> Pasaj_P147;
+Pasaj_P147 -> Pasaj_P148;
+Pasaj_P148 -> Pasaj_P149;
+Pasaj_P149 -> Pasaj_P150;
+Pasaj_P150 -> Pasaj_P151;
+Pasaj_P151 -> Pasaj_P152;
+Pasaj_P152 -> Pasaj_P153;
+Pasaj_P153 -> Pasaj_P154;
+Pasaj_P154 -> Pasaj_P155;
+Pasaj_P155 -> Pasaj_P156;
+Pasaj_P156 -> Pasaj_P157;
+Pasaj_P157 -> Pasaj_P158;
+Pasaj_P158 -> Pasaj_P159;
+Pasaj_P159 -> Pasaj_P160;
+}subgraph cluster_GFEscritorios{
+label = "Escritorios"
+;{ rank=same
+Escritorio_A[label="Escritorio: A\nEstado: Ocupado \nCliente: P11\nRestantes: 1, 3\nDocumentos: 3"];
+Escritorio_B[label="Escritorio: B\nEstado: Libre"];
+Escritorio_C[label="Escritorio: C\nEstado: Libre"];
+Escritorio_D[label="Escritorio: D\nEstado: Libre"];
+Escritorio_E[label="Escritorio: E\nEstado: Libre"];
+};
+
+Pasajdk_P12[label="Pasajero: P12\nMaletas: 4\nDocumentos:2\nTurnos: 2"];
+Pasajdk_P13[label="Pasajero: P13\nMaletas: 2\nDocumentos:1\nTurnos: 2"];
+Pasajdk_P14[label="Pasajero: P14\nMaletas: 1\nDocumentos:2\nTurnos: 2"];
+Escritorio_A -> Escritorio_B;
+Escritorio_B -> Escritorio_A;
+Escritorio_A -> Pasajdk_P12
+Escritorio_B -> Escritorio_C;
+Escritorio_C -> Escritorio_B;
+Escritorio_C -> Escritorio_D;
+Escritorio_D -> Escritorio_C;
+Escritorio_D -> Escritorio_E;
+Escritorio_E -> Escritorio_D;
+
+Pasajdk_P12 -> Pasajdk_P13;
+Pasajdk_P13 -> Pasajdk_P14;
+}subgraph cluster_GFMaletas{
+label = "Maletas"
+;Maleta_44 -> Maleta_43
+Maleta_44 -> Maleta_35
+Maleta_43 -> Maleta_42
+Maleta_43 -> Maleta_44
+Maleta_42 -> Maleta_41
+Maleta_42 -> Maleta_43
+Maleta_41 -> Maleta_40
+Maleta_41 -> Maleta_42
+Maleta_40 -> Maleta_39
+Maleta_40 -> Maleta_41
+Maleta_39 -> Maleta_38
+Maleta_39 -> Maleta_40
+Maleta_38 -> Maleta_37
+Maleta_38 -> Maleta_39
+Maleta_37 -> Maleta_36
+Maleta_37 -> Maleta_38
+Maleta_36 -> Maleta_35
+Maleta_36 -> Maleta_37
+Maleta_35 -> Maleta_44
+Maleta_35 -> Maleta_36
+}subgraph cluster_GFEstaciones{
+label = "Estaciones"
+;{ rank=same
+Estacion_0 -> Estacion_1;
+Estacion_1 -> Estacion_2;
+Estacion_2 -> Estacion_3;
+Estacion_3 -> Estacion_4;
+};
+Avion_0 ->Avion_1
+Avion_1 ->Avion_2
+Avion_2 ->Avion_3
+Avion_3 ->Avion_4
+Avion_4 ->Avion_5
+Avion_5 ->Avion_6
+Avion_6 ->Avion_7
+Avion_7 ->Avion_8
+}}

@@ -34,6 +34,7 @@ struct ListaSimple
     int Contador;
     void Insertar();
     Cola * ColaSimple;
+    string VerGraphviz();
 };
 
 #endif // LISTASIMPLE_H

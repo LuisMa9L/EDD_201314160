@@ -22,6 +22,53 @@ void ListaSimple::Insertar()
     actual->Siguiente = nueva;
 }
 
+string ListaSimple::VerGraphviz()
+{
+    if (this->ColaSimple == nullptr) return "";
+    Avion * actual = this->ColaSimple->Princial;
+    Estacion * actuale = this->Principal;
+    string SubGraph = "subgraph cluster_GFEstaciones{\nlabel = \"Estaciones\"\n;";
+    string SEnlaces = "";
+    string SEtiquetas = "";
+    SEnlaces += "{ rank=same\n";
+    while (actuale != nullptr) {
+        if (actuale->Siguiente != nullptr) {
+            SEnlaces += actuale->Nombre + " -> " + actuale->Siguiente->Nombre + ";\n";
+        }
+        actuale = actuale->Siguiente;
+    }
+    SEnlaces += "};\n";
+
+    while (actual!= nullptr) {
+        if (actual->Siguiente != nullptr) {
+            SEnlaces += actual->Nombre + " ->" + actual->Siguiente->Nombre +"\n";
+        }
+        actual = actual->Siguiente;
+    }
+
+
+
+
+/*
+
+    while (actual != nullptr) {
+        SEtiquetas += "Pasaj_" + actual->Id + "[label=\"Pasajero: " + actual->Id + "\\n"
+                + "Maletas: " + to_string(actual->Maletas) + "\\n"
+                + "Documentos:" + to_string(actual->Documentos) + "\\n"
+                + "Turnos: " + to_string(actual->Turnos)
+                + "\"];\n";
+        if (actual->Siguiente != nullptr) {
+            SEnlaces += "Pasaj_"+actual->Id + " -> " + "Pasaj_"+actual->Siguiente->Id + ";\n";
+        }
+        actual = actual->Siguiente;
+    }
+    */
+    SubGraph+= SEtiquetas;
+    SubGraph+= SEnlaces;
+    SubGraph+= "}";
+    return SubGraph;
+}
+
 Estacion::Estacion()
 {
     this->Siguiente = nullptr;

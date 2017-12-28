@@ -27,15 +27,15 @@ struct Escritorio
     char Nombre;
     int Ocupados;
     Pasajero * EnTurno;
-    Documento * Pila;
-    Pasajero * Cola;
+    Documento * PrincipalPila;
+    Pasajero * PrincipalCola;
 
     //Metodos para la cola
     void InsertarCola(Pasajero * pasajero_);
-    void SacarCola();
+    Pasajero * SacarCola();
 
     //Metodos para la pila
-    void InsertarPila(Documento);
+    void InsertarPila(Documento * documento_);
     void SacarPila();
 
 };
@@ -46,6 +46,7 @@ struct ListaDobleOrdenada
     Escritorio * Principal;
     void Insertar();
     char Contador;
+    string VerGraphviz();
 
     void InsertarPasajero(Pasajero * pasajero_);
 };

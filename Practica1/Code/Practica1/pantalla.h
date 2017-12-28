@@ -31,12 +31,16 @@ public:
     ListaDobleOrdenada * listaescritorios;
     ListaSimple * listaestaciones;
 
+    void VerGraphviz();
+    int turno;
     int Aviones;
 
 private slots:
     void on_BTurno_clicked();
 
     void on_BOk_clicked();
+
+    void on_BVer_clicked();
 
 private:
     Ui::Pantalla *ui;

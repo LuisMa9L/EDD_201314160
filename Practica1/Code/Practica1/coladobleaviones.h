@@ -31,6 +31,7 @@ struct ColaDobleAviones
     Avion * Sacar();
     int Contador;
     Avion * VerCola();
+    string VerGraphviz();
 };
 
 #endif // COLADOBLEAVIONES_H

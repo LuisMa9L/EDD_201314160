@@ -27,6 +27,7 @@ struct ColaSimplePasajeros
     void Insertar();
     Pasajero * Sacar();
     int Contador;
+    string VerGraphviz();
 };
 
 #endif // COLASIMPLEPASAJEROS_H

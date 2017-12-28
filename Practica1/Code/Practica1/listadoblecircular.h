@@ -25,6 +25,7 @@ struct ListaDobleCirlucur
     void Inserta();
     Maleta *Sacar();
     int Contador;
+    string VerGraph();
 };
 
 #endif // LISTADOBLECIRLUCUR_H

@@ -30,6 +30,30 @@ Pasajero *ColaSimplePasajeros::Sacar()
     return aux;
 }
 
+string ColaSimplePasajeros::VerGraphviz()
+{
+    if (this->Principal == nullptr) return "";
+    Pasajero * actual = this->Principal;
+    string SubGraph = "subgraph cluster_GFPasajeros{\nlabel = \"Pasajeros\"\n;";
+    string SEnlaces = "";
+    string SEtiquetas = "";
+    while (actual != nullptr) {
+        SEtiquetas += "Pasaj_" + actual->Id + "[label=\"Pasajero: " + actual->Id + "\\n"
+                + "Maletas: " + to_string(actual->Maletas) + "\\n"
+                + "Documentos:" + to_string(actual->Documentos) + "\\n"
+                + "Turnos: " + to_string(actual->Turnos)
+                + "\"];\n";
+        if (actual->Siguiente != nullptr) {
+            SEnlaces += "Pasaj_"+actual->Id + " -> " + "Pasaj_"+actual->Siguiente->Id + ";\n";
+        }
+        actual = actual->Siguiente;
+    }
+    SubGraph+= SEtiquetas;
+    SubGraph+= SEnlaces;
+    SubGraph+= "}";
+    return SubGraph;
+}
+
 Pasajero::Pasajero()
 {
     this->Siguiente = nullptr;

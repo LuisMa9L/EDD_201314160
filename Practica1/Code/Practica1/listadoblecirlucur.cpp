@@ -37,6 +37,25 @@ Maleta *ListaDobleCirlucur::Sacar()
     return aux;
 }
 
+string ListaDobleCirlucur::VerGraph()
+{
+    if (this->Principal == nullptr) return "";
+    string SubGraph = "subgraph cluster_GFMaletas{\nlabel = \"Maletas\"\n;";
+    string SEnlaces = "";
+    string SEtiquetas = "";
+    Maleta * actual = this->Principal;
+
+    do {
+        SEtiquetas += actual->Nombre + " -> " + actual->Siguiete->Nombre + "\n";
+        SEtiquetas += actual->Nombre + " -> " + actual->Anterior->Nombre + "\n";
+        actual = actual->Siguiete;
+    } while (this->Principal!=actual);
+    SubGraph+= SEtiquetas;
+    SubGraph+= SEnlaces;
+    SubGraph+= "}";
+    return SubGraph;
+}
+
 Maleta::Maleta()
 {
     this->Anterior = nullptr;
