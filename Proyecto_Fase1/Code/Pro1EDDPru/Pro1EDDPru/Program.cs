@@ -25,7 +25,11 @@ namespace Pro1EDDPru
             a.Buscar(a.Raiz, "no1").Juego.Inseretar("Daniel", 3, 4, 5, true);
             a.Buscar(a.Raiz, "no1").Juego.Inseretar("Josue", 3, 4, 5, true);
             a.VerGraphviz();
-
+            char valor = '0';
+            char le = 'a';
+            if (le == 'a' && valor == '0') {
+                Console.WriteLine("numero: " + ++valor + " ..Letra: " + ++le);
+            }
             Console.ReadKey();
 
         }
